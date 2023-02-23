@@ -27,6 +27,7 @@ let questions = [];
 // CONSTANTS
 const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = 5;
+localStorage.setItem('MAX_QUESTIONS', MAX_QUESTIONS);
 
 startGame = async () => {
     questions = await getData('https://opentdb.com/api.php?amount=20&category=20&difficulty=medium&type=multiple');
@@ -45,7 +46,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];

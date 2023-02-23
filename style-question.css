@@ -1,10 +1,9 @@
-.choice-container{
+.flex-row-item{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 0.5rem;
     width: 100%;
     font-size:1.8rem;
-    border: 0.1rem solid rgb(86, 165, 235, 0.25);
-    background-color: white;
 }
 
 .choice-container:hover{
@@ -12,6 +11,13 @@
     box-shadow: 0 0.4rem 1.4rem 0 rgb(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+}
+
+.choice-container{
+    flex-direction: row;
+    flex-basis: 30%;
+    background-color: white;
+    text-align: center;
 }
 
 .choice-prefix{
@@ -33,6 +39,15 @@
     background-color: #dc3545;
 }
 
+.frame{
+    border: #56a5eb 0.2rem solid;
+}
+
+#question{
+    padding: 2rem;
+    text-align: center;
+}
+
 /* HEADS UP DISPLAY */
 
 #hud{
@@ -43,6 +58,7 @@
 .hud-prefix{
     text-align: center;
     font-size: 2rem;
+    margin-top: 5rem;
 }
 
 .hud-main-text{
