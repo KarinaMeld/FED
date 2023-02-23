@@ -1,3 +1,15 @@
-.{
-    
+:root{
+    --my-emerald: #8EB69B;
+    --my-dark: #0B2B26;
+    --my-bg: #DAF1DE;
+    --my-box-bg: #F1FDF0;
+    --my-red: #AC2647;
+    --my-green: #84C481;
+}
+
+#end{
+    text-align: center;
+}
+#play-again{
+    color: var(--my-dark);
 }

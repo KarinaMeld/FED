@@ -1,3 +1,11 @@
+:root{
+    --my-emerald: #8EB69B;
+    --my-dark: #0B2B26;
+    --my-bg: #DAF1DE;
+    --my-box-bg: #F1FDF0;
+    --my-red: #AC2647;
+    --my-green: #84C481;
+}
 .flex-row-item{
     display: flex;
     justify-content: space-between;
@@ -8,7 +16,7 @@
 
 .choice-container:hover{
     cursor:pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(71, 93, 74, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -16,14 +24,14 @@
 .choice-container{
     flex-direction: row;
     flex-basis: 30%;
-    background-color: white;
+    background-color: var(--my-box-bg);
     text-align: center;
 }
 
 .choice-prefix{
     padding: 1.5rem 2.5rem;
-    background-color: #56a5eb;
-    color: white;
+    background-color: var(--my-emerald);
+    color: var(--my-box-bg);
 }
 
 .choice-text{
@@ -32,20 +40,21 @@
 }
 
 .correct{
-    background-color: #28a745;
+    background-color: var(--my-green);
 }
 
 .incorrect{
-    background-color: #dc3545;
+    background-color: var(--my-red);
 }
 
 .frame{
-    border: #56a5eb 0.2rem solid;
+    border: var(--my-emerald) 0.2rem solid;
 }
 
 #question{
     padding: 2rem;
     text-align: center;
+    background-color: var(--my-box-bg);
 }
 
 /* HEADS UP DISPLAY */
