@@ -23,7 +23,6 @@ getData = async (url) => {
 let questions = [];
 // 'https://opentdb.com/api.php?amount=20&category=20&difficulty=medium&type=multiple'
 
-
 // CONSTANTS
 const CORRECT_BONUS = 1;
 const MAX_QUESTIONS = 5;
@@ -31,7 +30,6 @@ localStorage.setItem('MAX_QUESTIONS', MAX_QUESTIONS);
 
 startGame = async () => {
     questions = await getData('https://opentdb.com/api.php?amount=20&category=20&difficulty=medium&type=multiple');
-    console.log(questions)
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
